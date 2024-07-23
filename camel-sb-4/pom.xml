@@ -21,14 +21,9 @@
     <surefire.plugin.version>3.0.0-M4</surefire.plugin.version>
     <jkube.generator.from>registry.access.redhat.com/ubi8/openjdk-17:latest</jkube.generator.from>
 
-    <jolokia.protocol>https</jolokia.protocol>
-    <jolokia.host>*</jolokia.host>
-    <jolokia.port>8778</jolokia.port>
-    <jolokia.useSslClientAuthentication>true</jolokia.useSslClientAuthentication>
-    <jolokia.caCert>/var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt</jolokia.caCert>
-    <jolokia.clientPrincipal.1>cn=hawtio-online.hawtio.svc</jolokia.clientPrincipal.1>
-    <jolokia.extendedClientCheck>true</jolokia.extendedClientCheck>
-    <jolokia.discoveryEnabled>false</jolokia.discoveryEnabled>
+    <jkube.generator.spring-boot.webPort>0</jkube.generator.spring-boot.webPort>
+    <jkube.generator.spring-boot.prometheusPort>0</jkube.generator.spring-boot.prometheusPort>
+    <jkube.generator.spring-boot.jolokiaPort>0</jkube.generator.spring-boot.jolokiaPort>
   </properties>
 
   <dependencyManagement>

@@ -1,0 +1,16 @@
+
+spec:
+  template:
+    metadata:
+      annotations:
+        hawt.io/protocol: http
+        hawt.io/jolokiaPath: /actuator/jolokia/
+    spec:
+      containers:
+      - ports:
+        - containerPort: 10001
+          name: jolokia
+          protocol: TCP
+        - containerPort: 8080
+          name: http
+          protocol: TCP
