@@ -28,7 +28,7 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Camel on SB BOM --> 
+      <!-- Camel on SB BOM -->
       <dependency>
         <groupId>com.redhat.camel.springboot.platform</groupId>
         <artifactId>camel-spring-boot-bom</artifactId>
@@ -44,6 +44,12 @@
         <version>4.0.0.redhat-00072</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-spring-xml</artifactId>
+        <version>4.4.0.redhat-00014</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -78,6 +84,22 @@
     <dependency>
       <groupId>org.apache.camel.springboot</groupId>
       <artifactId>camel-stream-starter</artifactId>
+    </dependency>
+
+    <!--
+      This dependency is mandatory for enabling Camel management
+      via JMX / Hawtio.
+    -->
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-management</artifactId>
+    </dependency>
+    <!--
+      This dependency is required for displaying the xml source and route diagram
+    -->
+    <dependency>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-spring-xml</artifactId>
     </dependency>
 
     <!-- Test -->
