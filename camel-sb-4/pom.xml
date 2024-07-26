@@ -49,7 +49,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-spring-xml</artifactId>
-        <version>4.4.0.redhat-00014</version>
+        <version>4.4.0.redhat-00019</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
